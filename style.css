@@ -408,7 +408,7 @@
   }
 
   /* Layout sizing */
-  .pi-1 { grid-column: span 5; }
+  /* .pi-1 { grid-column: span 5; }
   .pi-2 { grid-column: span 4; }
   .pi-3 { grid-column: span 3; }
   .pi-4 { grid-column: span 4; }
@@ -416,7 +416,21 @@
   .pi-6 { grid-column: span 3; }
   .pi-7 { grid-column: span 4; }
   .pi-8 { grid-column: span 4; }
-  .pi-9 { grid-column: span 4; }
+  .pi-9 { grid-column: span 4; } */
+
+/* Balanced Portfolio Layout */
+
+.pi-1 { grid-column: span 4; }
+.pi-2 { grid-column: span 4; }
+.pi-3 { grid-column: span 4; }
+
+.pi-4 { grid-column: span 3; }
+.pi-5 { grid-column: span 3; }
+.pi-6 { grid-column: span 3; }
+.pi-7 { grid-column: span 3; }
+
+.pi-8 { grid-column: span 6; }
+.pi-9 { grid-column: span 6; }
 
   .port-item {
     position: relative;
@@ -432,11 +446,26 @@
     object-fit: cover;
     display: block;
     transition: transform .6s ease;
-  }
+}
 
-  /* Special sizing overrides */
-  .pi-1 img, .pi-5 img { min-height: 320px; }
-  .pi-2 img, .pi-4 img { min-height: 260px; }
+/* More balanced heights */
+.pi-1 img,
+.pi-2 img,
+.pi-3 img {
+    min-height: 260px;
+}
+
+.pi-4 img,
+.pi-5 img,
+.pi-6 img,
+.pi-7 img {
+    min-height: 220px;
+}
+
+.pi-8 img,
+.pi-9 img {
+    min-height: 240px;
+}
 
   .port-item:hover img { transform: scale(1.06); }
 
